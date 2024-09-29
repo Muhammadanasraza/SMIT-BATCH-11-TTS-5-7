@@ -31,14 +31,14 @@ function CartContextProvider({ children }) {
     setCartItems([...arr]);
   }
 
-  function updateToCart(id, type) {
-    const arr = [...cartItems];
-    const itemInd = arr.findIndex((data) => data.id == id);
-    if (type == "plus") {
-      arr[itemInd].quantity++;
-    } else {
-      arr[itemInd].quantity--;
-    }
+    function updateToCart(id, type) {
+      const arr = [...cartItems];
+      const itemInd = arr.findIndex((data) => data.id == id);
+      if (type == "plus") {
+        arr[itemInd].quantity++;
+      } else {
+        arr[itemInd].quantity--;
+      }
 
     setCartItems([...arr]);
   }

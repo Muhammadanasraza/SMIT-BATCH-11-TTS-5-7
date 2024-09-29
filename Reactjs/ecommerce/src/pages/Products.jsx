@@ -23,7 +23,7 @@ function Products() {
     axios
       .get(`https://dummyjson.com/products?limit=20&skip=${skip}`)
       .then((res) => {
-        console.log("res.data==>", res.data);
+        console.log("res.data==>", res.data); 
         setProducts(res.data.products);
         setTotal(res.data.total);
       });
